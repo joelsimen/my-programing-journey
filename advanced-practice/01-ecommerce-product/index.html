@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Page — Aria Chair</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Fauna</div>
+    <nav class="main-nav">
+      <a href="#">Shop</a>
+      <a href="#">Collections</a>
+      <a href="#">About</a>
+    </nav>
+    <div class="cart-icon" id="cartIcon">
+      🛒 <span class="cart-count" id="cartCount">0</span>
+    </div>
+  </header>
+
+  <main class="product-page">
+    <section class="gallery">
+      <img class="main-image" id="mainImage" src="https://picsum.photos/id/119/600/600" alt="Aria Chair main view">
+      <div class="thumbnails">
+        <img src="https://picsum.photos/id/119/120/120" data-full="https://picsum.photos/id/119/600/600" class="thumb active">
+        <img src="https://picsum.photos/id/106/120/120" data-full="https://picsum.photos/id/106/600/600" class="thumb">
+        <img src="https://picsum.photos/id/103/120/120" data-full="https://picsum.photos/id/103/600/600" class="thumb">
+      </div>
+    </section>
+
+    <section class="details">
+      <p class="breadcrumb">Home / Chairs / Aria</p>
+      <h1>Aria Lounge Chair</h1>
+      <p class="rating">★★★★★ <span>(128 reviews)</span></p>
+      <p class="price">$249.00</p>
+      <p class="description">A low, wide lounge chair built around solid oak legs and a hand-finished boucle cushion. Designed to be the one chair everyone in the room ends up in.</p>
+
+      <div class="option-group">
+        <label>Color</label>
+        <div class="swatches">
+          <button class="swatch active" style="background:#d9c9a3" data-color="Sand"></button>
+          <button class="swatch" style="background:#4b5563" data-color="Charcoal"></button>
+          <button class="swatch" style="background:#7c2d12" data-color="Rust"></button>
+        </div>
+        <p class="selected-color">Selected: <span id="selectedColor">Sand</span></p>
+      </div>
+
+      <div class="option-group">
+        <label>Quantity</label>
+        <div class="qty-control">
+          <button id="qtyMinus">−</button>
+          <span id="qtyValue">1</span>
+          <button id="qtyPlus">+</button>
+        </div>
+      </div>
+
+      <button class="add-to-cart" id="addToCartBtn">Add to Cart — $249.00</button>
+
+      <div class="accordion-info">
+        <div class="info-item">
+          <button class="info-toggle">Shipping & Returns <span>+</span></button>
+          <div class="info-panel"><p>Free shipping on orders over $150. Returns accepted within 30 days, item must be unused.</p></div>
+        </div>
+        <div class="info-item">
+          <button class="info-toggle">Materials <span>+</span></button>
+          <div class="info-panel"><p>Solid oak frame, boucle upholstery, high-density foam cushioning.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast">Added to cart</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
