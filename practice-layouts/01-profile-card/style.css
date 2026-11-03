@@ -1,0 +1,43 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #1f2933, #3e4c59);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 30px;
+  max-width: 320px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #3e4c59;
+  margin-bottom: 16px;
+}
+.name { font-size: 1.4rem; color: #1f2933; }
+.role { color: #7b8794; font-size: 0.95rem; margin-bottom: 12px; }
+.bio { color: #52606d; font-size: 0.9rem; line-height: 1.5; margin-bottom: 20px; }
+.socials { display: flex; justify-content: center; gap: 16px; margin-bottom: 20px; font-size: 1.4rem; }
+.socials a { text-decoration: none; }
+.btn {
+  background: #3e4c59;
+  color: #fff;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 24px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.btn:hover { background: #1f2933; }

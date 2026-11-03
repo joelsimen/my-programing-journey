@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ledgerly — Simple accounting for freelancers</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Ledgerly</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#" class="btn-outline">Log in</a>
+      <a href="#" class="btn-primary">Start free trial</a>
+    </div>
+    <button class="hamburger" id="hamburger">☰</button>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <span class="eyebrow">For freelancers & solo founders</span>
+      <h1>Invoicing and taxes, without the spreadsheet headache.</h1>
+      <p>Ledgerly tracks income, sends invoices, and estimates what you owe in taxes — automatically, every month.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn-primary large">Start free trial</a>
+        <a href="#" class="btn-text">Watch 2-min demo →</a>
+      </div>
+      <p class="hero-note">No credit card required · Cancel anytime</p>
+    </div>
+    <div class="hero-visual">
+      <div class="mock-card">
+        <div class="mock-row"><span>Invoice #204</span><span class="status paid">Paid</span></div>
+        <div class="mock-row"><span>Invoice #205</span><span class="status pending">Pending</span></div>
+        <div class="mock-row"><span>Invoice #206</span><span class="status paid">Paid</span></div>
+        <div class="mock-total">This month: <strong>$4,820</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="logos">
+    <p>Trusted by independent professionals at</p>
+    <div class="logo-row">
+      <span>Studio North</span><span>Kite & Co</span><span>Basalt</span><span>Fernbridge</span><span>Marlow</span>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Everything your books actually need</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="icon">🧾</div>
+        <h3>Instant invoices</h3>
+        <p>Create and send a professional invoice in under a minute, with automatic payment reminders.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">📈</div>
+        <h3>Live income tracking</h3>
+        <p>See exactly what you've earned this month, this quarter, and this year, updated in real time.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🧮</div>
+        <h3>Tax estimates</h3>
+        <p>Ledgerly sets aside what you'll likely owe, so tax season never catches you off guard.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial">
+    <blockquote>
+      "I went from dreading invoices to sending them the same day I finish a project. Ledgerly paid for itself in the first month."
+    </blockquote>
+    <p class="testimonial-author">— Priya Rao, Freelance Illustrator</p>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <h2>Simple pricing</h2>
+    <div class="toggle-row">
+      <span>Monthly</span>
+      <label class="switch">
+        <input type="checkbox" id="billingToggle">
+        <span class="slider"></span>
+      </label>
+      <span>Yearly <span class="save-badge">Save 20%</span></span>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Starter</h3>
+        <p class="amount"><span class="monthly-price">$9</span><span class="yearly-price hidden">$86</span><span class="period">/mo</span></p>
+        <ul><li>Up to 5 clients</li><li>Unlimited invoices</li><li>Email support</li></ul>
+        <a href="#" class="btn-outline full">Choose Starter</a>
+      </div>
+      <div class="price-card featured">
+        <span class="badge">Most Popular</span>
+        <h3>Pro</h3>
+        <p class="amount"><span class="monthly-price">$19</span><span class="yearly-price hidden">$182</span><span class="period">/mo</span></p>
+        <ul><li>Unlimited clients</li><li>Tax estimates</li><li>Priority support</li></ul>
+        <a href="#" class="btn-primary full">Choose Pro</a>
+      </div>
+      <div class="price-card">
+        <h3>Team</h3>
+        <p class="amount"><span class="monthly-price">$39</span><span class="yearly-price hidden">$374</span><span class="period">/mo</span></p>
+        <ul><li>Up to 5 seats</li><li>Shared dashboards</li><li>Dedicated support</li></ul>
+        <a href="#" class="btn-outline full">Choose Team</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">Can I cancel anytime? <span>+</span></button>
+        <div class="faq-answer"><p>Yes, there's no contract. Cancel from your account settings whenever you'd like.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Does Ledgerly file my taxes for me? <span>+</span></button>
+        <div class="faq-answer"><p>Not yet — Ledgerly estimates what you owe so you're never surprised, but filing is still done separately with your accountant or tax software.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is my data secure? <span>+</span></button>
+        <div class="faq-answer"><p>All data is encrypted in transit and at rest, and we never sell client information.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="logo">Ledgerly</div>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2026 Ledgerly Inc.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

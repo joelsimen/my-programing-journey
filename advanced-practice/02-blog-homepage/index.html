@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Weekly Read — Blog</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">The Weekly Read</div>
+    <nav class="main-nav">
+      <a href="#" class="active">Home</a>
+      <a href="#">Design</a>
+      <a href="#">Code</a>
+      <a href="#">Life</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle">🌙</button>
+  </header>
+
+  <section class="featured">
+    <img src="https://picsum.photos/id/180/900/500" alt="Featured post">
+    <div class="featured-text">
+      <span class="tag">Design</span>
+      <h1>Why whitespace is the most underrated design tool</h1>
+      <p>It's not empty space — it's the thing doing most of the work. A look at how the best interfaces use restraint.</p>
+      <span class="meta">By Nadia Okafor · 6 min read</span>
+    </div>
+  </section>
+
+  <section class="post-list">
+    <div class="list-header">
+      <h2>Latest Articles</h2>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="code">Code</button>
+        <button class="filter-btn" data-filter="life">Life</button>
+      </div>
+    </div>
+
+    <div class="grid" id="postGrid">
+      <article class="post-card" data-category="code">
+        <img src="https://picsum.photos/id/0/400/240" alt="">
+        <span class="tag">Code</span>
+        <h3>A beginner's guide to CSS Grid, finally explained simply</h3>
+        <p class="meta">By Ken Osei · 4 min read</p>
+      </article>
+      <article class="post-card" data-category="life">
+        <img src="https://picsum.photos/id/1/400/240" alt="">
+        <span class="tag">Life</span>
+        <h3>What working four-day weeks taught our small team</h3>
+        <p class="meta">By Ines Diallo · 5 min read</p>
+      </article>
+      <article class="post-card" data-category="design">
+        <img src="https://picsum.photos/id/2/400/240" alt="">
+        <span class="tag">Design</span>
+        <h3>Color theory rules you can safely ignore</h3>
+        <p class="meta">By Tariq Aidoo · 3 min read</p>
+      </article>
+      <article class="post-card" data-category="code">
+        <img src="https://picsum.photos/id/3/400/240" alt="">
+        <span class="tag">Code</span>
+        <h3>Why we moved off Redux and didn't look back</h3>
+        <p class="meta">By Nadia Okafor · 7 min read</p>
+      </article>
+      <article class="post-card" data-category="life">
+        <img src="https://picsum.photos/id/4/400/240" alt="">
+        <span class="tag">Life</span>
+        <h3>Notes from a year of remote-first hiring</h3>
+        <p class="meta">By Ken Osei · 6 min read</p>
+      </article>
+      <article class="post-card" data-category="design">
+        <img src="https://picsum.photos/id/5/400/240" alt="">
+        <span class="tag">Design</span>
+        <h3>The case for boring, consistent UI patterns</h3>
+        <p class="meta">By Ines Diallo · 4 min read</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <h2>Get one good essay a week</h2>
+    <p>No spam, unsubscribe anytime.</p>
+    <form id="newsletterForm">
+      <input type="email" id="emailInput" placeholder="you@example.com" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p class="form-message" id="formMessage"></p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 The Weekly Read.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

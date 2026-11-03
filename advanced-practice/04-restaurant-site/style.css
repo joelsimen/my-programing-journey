@@ -1,0 +1,83 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; color: #2c241d; }
+h1, h2 { font-family: Georgia, serif; }
+
+.hero {
+  background: linear-gradient(rgba(20,15,10,0.55), rgba(20,15,10,0.75)), url('https://picsum.photos/id/292/1400/800') center/cover;
+  color: #fff;
+  min-height: 90vh;
+}
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 26px 50px; }
+.logo { font-family: Georgia, serif; font-size: 1.6rem; letter-spacing: 1px; }
+.nav-links a { color: #f2ece3; margin-left: 26px; text-decoration: none; font-size: 0.95rem; }
+.nav-links a:hover { color: #e0a458; }
+
+.hero-content { max-width: 620px; margin: 0 auto; text-align: center; padding: 90px 20px 130px; }
+.hero-content h1 { font-size: 3rem; margin-bottom: 18px; }
+.hero-content p { color: #e8e0d5; font-size: 1.1rem; margin-bottom: 30px; }
+.btn {
+  display: inline-block;
+  background: #e0a458;
+  color: #2c241d;
+  padding: 14px 32px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.btn:hover { background: #c98e42; }
+.btn.full { width: 100%; margin-top: 6px; }
+
+.menu, .gallery, .reserve { max-width: 1000px; margin: 0 auto; padding: 90px 24px; }
+.menu h2, .gallery h2 { text-align: center; margin-bottom: 40px; font-size: 2.2rem; }
+
+.menu-tabs { display: flex; justify-content: center; gap: 12px; margin-bottom: 40px; }
+.menu-tab {
+  background: none;
+  border: 1px solid #d4c9b8;
+  padding: 8px 22px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #6b5d4f;
+}
+.menu-tab.active { background: #2c241d; color: #fff; border-color: #2c241d; }
+
+.menu-items { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; max-width: 750px; margin: 0 auto; }
+.menu-item { display: none; border-bottom: 1px dashed #d4c9b8; padding-bottom: 16px; }
+.menu-item.show { display: block; }
+.item-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; }
+.item-row h3 { font-family: Georgia, serif; font-size: 1.15rem; }
+.item-row span { color: #b45309; font-weight: bold; }
+.menu-item p { color: #6b5d4f; font-size: 0.92rem; }
+
+.gallery-grid { column-count: 3; column-gap: 16px; }
+.gallery-grid img { width: 100%; margin-bottom: 16px; border-radius: 8px; display: block; }
+
+.reserve { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; background: #f7f2eb; border-radius: 16px; }
+.reserve-info h2 { font-size: 2rem; margin-bottom: 16px; }
+.reserve-info p { color: #6b5d4f; margin-bottom: 14px; line-height: 1.6; }
+.contact { font-weight: 600; color: #2c241d; }
+
+.reserve-form { background: #fff; padding: 30px; border-radius: 12px; }
+.form-row { display: flex; gap: 16px; }
+.form-group { flex: 1; margin-bottom: 16px; }
+.form-group label { display: block; font-size: 0.85rem; color: #6b5d4f; margin-bottom: 6px; }
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d4c9b8;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+.form-message { margin-top: 14px; font-size: 0.9rem; min-height: 20px; }
+
+.footer { text-align: center; padding: 26px; background: #2c241d; color: #cbbfae; font-size: 0.85rem; }
+
+@media (max-width: 800px) {
+  .reserve { grid-template-columns: 1fr; }
+  .gallery-grid { column-count: 2; }
+  .nav-links { display: none; }
+}

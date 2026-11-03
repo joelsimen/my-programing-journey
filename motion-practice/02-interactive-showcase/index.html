@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orbit — Interactive Product Showcase</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <nav class="navbar">
+    <div class="logo">ORBIT</div>
+    <a href="#" class="magnetic-btn" id="ctaBtn"><span>Pre-order</span></a>
+  </nav>
+
+  <header class="hero">
+    <h1>Sound, <span>reimagined.</span></h1>
+    <p>Move your cursor over the card. Tilt is tracked in real time from mouse position.</p>
+  </header>
+
+  <section class="showcase">
+    <div class="tilt-wrapper" id="tiltWrapper">
+      <div class="tilt-card" id="tiltCard">
+        <img src="https://picsum.photos/id/367/500/500" alt="Orbit speaker">
+        <div class="shine" id="shine"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-cards">
+    <div class="feature-card" data-tilt>
+      <div class="icon">🔋</div>
+      <h3>30-hour battery</h3>
+      <p>A full day of sound on a single charge, with fast-charge for 5 hours in just 10 minutes.</p>
+    </div>
+    <div class="feature-card" data-tilt>
+      <div class="icon">🌊</div>
+      <h3>Waterproof</h3>
+      <p>IP67-rated. Take it to the beach, the shower, or the storm — it doesn't care.</p>
+    </div>
+    <div class="feature-card" data-tilt>
+      <div class="icon">🎧</div>
+      <h3>Spatial audio</h3>
+      <p>360° sound that adjusts to the shape of whatever room you're in.</p>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Ready when you are.</h2>
+    <a href="#" class="magnetic-btn large" id="ctaBtn2"><span>Order Orbit — $199</span></a>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

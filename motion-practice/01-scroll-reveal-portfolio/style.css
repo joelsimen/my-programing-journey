@@ -1,0 +1,71 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Segoe UI', Arial, sans-serif; color: #1a1a1a; background: #fdfcfb; overflow-x: hidden; }
+h1, h2 { font-family: Georgia, serif; }
+
+/* Reveal-on-scroll base state */
+.reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+.navbar { position: fixed; top: 0; left: 0; right: 0; display: flex; justify-content: space-between; padding: 24px 50px; z-index: 100; mix-blend-mode: difference; color: #fff; }
+.logo { font-weight: bold; letter-spacing: 2px; font-size: 0.95rem; }
+.nav-links a { color: #fff; margin-left: 26px; text-decoration: none; font-size: 0.9rem; }
+
+.hero { position: relative; height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.parallax-bg {
+  position: absolute; inset: -10% 0 0 0; height: 120%;
+  background: url('https://picsum.photos/id/1018/1600/1000') center/cover;
+  will-change: transform;
+}
+.parallax-bg::after { content:""; position:absolute; inset:0; background: rgba(10,10,10,0.45); }
+.hero-text { position: relative; z-index: 2; text-align: center; color: #fff; max-width: 700px; padding: 0 20px; }
+.eyebrow { text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; color: #e0c9a6; }
+.hero-text h1 { font-size: 3rem; margin: 16px 0; line-height: 1.25; }
+.highlight { color: #e0c9a6; font-style: italic; }
+.hero-text p { color: #e8e4dd; font-size: 1.05rem; }
+
+.scroll-cue { position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%); z-index: 2; text-align: center; color: #fff; }
+.scroll-cue span { display: block; width: 1px; height: 40px; background: #fff; margin: 0 auto 8px; animation: scrollPulse 1.8s infinite; }
+.scroll-cue p { font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; opacity: 0.8; }
+@keyframes scrollPulse { 0% { transform: scaleY(0.3); opacity: 0.4; } 50% { transform: scaleY(1); opacity: 1; } 100% { transform: scaleY(0.3); opacity: 0.4; } }
+
+.stats { display: flex; justify-content: center; gap: 70px; flex-wrap: wrap; padding: 80px 20px; background: #1a1a1a; color: #fff; }
+.stat { text-align: center; }
+.counter { font-size: 2.6rem; font-weight: bold; display: block; font-family: Georgia, serif; }
+.stat p { color: #b3aca3; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-top: 6px; }
+
+.work { max-width: 1100px; margin: 0 auto; padding: 100px 24px; }
+.work h2 { text-align: center; font-size: 2.2rem; margin-bottom: 50px; }
+.grid { columns: 3; column-gap: 20px; }
+.grid-item { break-inside: avoid; margin-bottom: 20px; position: relative; overflow: hidden; border-radius: 6px; }
+.grid-item img { width: 100%; display: block; transition: transform 0.6s ease; }
+.grid-item:hover img { transform: scale(1.08); }
+.grid-item figcaption {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.75));
+  color: #fff; padding: 30px 14px 12px; font-size: 0.85rem;
+  opacity: 0; transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.grid-item:hover figcaption { opacity: 1; transform: translateY(0); }
+
+.about { background: #f2ede6; padding: 100px 24px; text-align: center; }
+.about-text { max-width: 650px; margin: 0 auto; }
+.about h2 { font-size: 2rem; margin-bottom: 18px; }
+.about p { color: #5c5347; line-height: 1.7; font-size: 1.05rem; }
+
+.contact { text-align: center; padding: 110px 24px; }
+.contact h2 { font-size: 2.2rem; margin-bottom: 30px; }
+.btn { display: inline-block; padding: 16px 38px; border: 1px solid #1a1a1a; border-radius: 30px; text-decoration: none; color: #1a1a1a; font-size: 0.95rem; transition: background 0.3s ease, color 0.3s ease; }
+.btn:hover { background: #1a1a1a; color: #fff; }
+
+.footer { text-align: center; padding: 26px; color: #999; font-size: 0.8rem; }
+
+@media (max-width: 800px) {
+  .grid { columns: 2; }
+  .nav-links { display: none; }
+  .hero-text h1 { font-size: 2.1rem; }
+}
+@media (max-width: 500px) {
+  .grid { columns: 1; }
+}

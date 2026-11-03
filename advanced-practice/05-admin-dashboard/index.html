@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">Nimbus</div>
+      <nav>
+        <a href="#" class="active">📊 Dashboard</a>
+        <a href="#">🧾 Orders</a>
+        <a href="#">👥 Customers</a>
+        <a href="#">📦 Products</a>
+        <a href="#">⚙️ Settings</a>
+      </nav>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <button id="menuBtn" class="menu-btn">☰</button>
+        <input type="text" id="searchInput" class="search" placeholder="Search orders, customers...">
+        <div class="profile">👤 Admin</div>
+      </header>
+
+      <section class="stats">
+        <div class="stat-card">
+          <p class="label">Total Revenue</p>
+          <p class="value">$48,290</p>
+          <p class="delta up">▲ 12.4%</p>
+        </div>
+        <div class="stat-card">
+          <p class="label">Orders</p>
+          <p class="value">1,204</p>
+          <p class="delta up">▲ 4.1%</p>
+        </div>
+        <div class="stat-card">
+          <p class="label">New Customers</p>
+          <p class="value">312</p>
+          <p class="delta down">▼ 2.3%</p>
+        </div>
+        <div class="stat-card">
+          <p class="label">Refund Rate</p>
+          <p class="value">1.8%</p>
+          <p class="delta up">▲ 0.3%</p>
+        </div>
+      </section>
+
+      <section class="chart-section">
+        <h2>Revenue — Last 7 Days</h2>
+        <canvas id="revenueChart" height="90"></canvas>
+      </section>
+
+      <section class="table-section">
+        <h2>Recent Orders</h2>
+        <table id="ordersTable">
+          <thead>
+            <tr><th>Order</th><th>Customer</th><th>Date</th><th>Amount</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr data-status="paid"><td>#3021</td><td>Lena Fischer</td><td>Jul 21</td><td>$120.00</td><td><span class="badge paid">Paid</span></td></tr>
+            <tr data-status="pending"><td>#3022</td><td>Marcus Idowu</td><td>Jul 21</td><td>$85.50</td><td><span class="badge pending">Pending</span></td></tr>
+            <tr data-status="paid"><td>#3023</td><td>Sofia Reyes</td><td>Jul 20</td><td>$240.00</td><td><span class="badge paid">Paid</span></td></tr>
+            <tr data-status="refunded"><td>#3024</td><td>Tom Baptiste</td><td>Jul 20</td><td>$60.00</td><td><span class="badge refunded">Refunded</span></td></tr>
+            <tr data-status="paid"><td>#3025</td><td>Aiko Tanaka</td><td>Jul 19</td><td>$310.00</td><td><span class="badge paid">Paid</span></td></tr>
+            <tr data-status="pending"><td>#3026</td><td>Noah Kessler</td><td>Jul 19</td><td>$45.00</td><td><span class="badge pending">Pending</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

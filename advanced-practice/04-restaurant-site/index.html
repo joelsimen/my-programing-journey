@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marrow — Modern Bistro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">Marrow</div>
+      <div class="nav-links">
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reserve">Reserve</a>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <h1>Slow food, cooked with fire.</h1>
+      <p>An open-kitchen bistro in the heart of downtown, built around a wood-fired grill and a short, seasonal menu.</p>
+      <a href="#reserve" class="btn">Book a Table</a>
+    </div>
+  </header>
+
+  <section class="menu" id="menu">
+    <h2>Tonight's Menu</h2>
+    <div class="menu-tabs">
+      <button class="menu-tab active" data-cat="starters">Starters</button>
+      <button class="menu-tab" data-cat="mains">Mains</button>
+      <button class="menu-tab" data-cat="desserts">Desserts</button>
+    </div>
+    <div class="menu-items" id="menuItems">
+      <div class="menu-item" data-cat="starters">
+        <div class="item-row"><h3>Charred Octopus</h3><span>$16</span></div>
+        <p>Smoked paprika, crushed potato, salsa verde</p>
+      </div>
+      <div class="menu-item" data-cat="starters">
+        <div class="item-row"><h3>Burrata</h3><span>$14</span></div>
+        <p>Heirloom tomato, basil oil, sourdough crumb</p>
+      </div>
+      <div class="menu-item" data-cat="mains">
+        <div class="item-row"><h3>Wood-fired Ribeye</h3><span>$38</span></div>
+        <p>Bone marrow butter, roasted bone, watercress</p>
+      </div>
+      <div class="menu-item" data-cat="mains">
+        <div class="item-row"><h3>Grilled Sea Bass</h3><span>$29</span></div>
+        <p>Charred lemon, fennel, brown butter</p>
+      </div>
+      <div class="menu-item" data-cat="desserts">
+        <div class="item-row"><h3>Basque Cheesecake</h3><span>$10</span></div>
+        <p>Burnt top, seasonal berry compote</p>
+      </div>
+      <div class="menu-item" data-cat="desserts">
+        <div class="item-row"><h3>Dark Chocolate Tart</h3><span>$11</span></div>
+        <p>Sea salt, olive oil, espresso crumb</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <h2>Inside Marrow</h2>
+    <div class="gallery-grid">
+      <img src="https://picsum.photos/id/292/500/400" alt="">
+      <img src="https://picsum.photos/id/365/500/650" alt="">
+      <img src="https://picsum.photos/id/431/500/400" alt="">
+      <img src="https://picsum.photos/id/493/500/400" alt="">
+      <img src="https://picsum.photos/id/1080/500/650" alt="">
+      <img src="https://picsum.photos/id/1060/500/400" alt="">
+    </div>
+  </section>
+
+  <section class="reserve" id="reserve">
+    <div class="reserve-info">
+      <h2>Reserve a Table</h2>
+      <p>Open Tuesday–Sunday, 5:30pm – 11pm. For parties over 8, please call us directly.</p>
+      <p class="contact">📍 14 Elm Street &nbsp; · &nbsp; 📞 (555) 013-2245</p>
+    </div>
+    <form class="reserve-form" id="reserveForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="guests">Guests</label>
+          <select id="guests">
+            <option>1</option><option>2</option><option selected>3</option><option>4</option><option>5+</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Time</label>
+          <input type="time" id="time" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+      </div>
+      <button type="submit" class="btn full">Confirm Reservation</button>
+      <p class="form-message" id="reserveMessage"></p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Marrow Bistro. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

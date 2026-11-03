@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to Nest — Onboarding</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <div class="onboarding-card">
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <div class="steps" id="stepsContainer">
+      <div class="step active" data-step="1">
+        <div class="step-icon">👋</div>
+        <h2>Welcome to Nest</h2>
+        <p>Let's set up your space in under a minute. First, what should we call you?</p>
+        <input type="text" id="nameInput" placeholder="Your name">
+      </div>
+
+      <div class="step" data-step="2">
+        <div class="step-icon">🎯</div>
+        <h2>What brings you here?</h2>
+        <p>Pick what matches best, you can change this anytime.</p>
+        <div class="option-cards">
+          <button class="option-card" data-choice="Personal">🏠<span>Personal use</span></button>
+          <button class="option-card" data-choice="Team">👥<span>My team</span></button>
+          <button class="option-card" data-choice="Client">💼<span>Client work</span></button>
+        </div>
+      </div>
+
+      <div class="step" data-step="3">
+        <div class="step-icon">🎨</div>
+        <h2>Pick a theme</h2>
+        <p>You can switch this later in settings.</p>
+        <div class="theme-swatches">
+          <button class="theme-swatch" style="background:#6d5efc" data-theme="Violet"></button>
+          <button class="theme-swatch" style="background:#22c55e" data-theme="Mint"></button>
+          <button class="theme-swatch" style="background:#f97316" data-theme="Amber"></button>
+        </div>
+      </div>
+
+      <div class="step" data-step="4">
+        <div class="step-icon success-icon">✓</div>
+        <h2 id="doneHeading">You're all set!</h2>
+        <p id="doneSummary">Let's get started.</p>
+      </div>
+    </div>
+
+    <div class="nav-buttons">
+      <button class="btn-back" id="backBtn">Back</button>
+      <div class="dots" id="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <button class="btn-next" id="nextBtn">Continue</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
